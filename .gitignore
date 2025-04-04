@@ -1,3 +1,6 @@
 backend/data/
 !backend/data/.gitkeep
 
+frontend/node_modules
+
+*.log
