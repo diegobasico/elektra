@@ -1,0 +1,111 @@
+2025-04-04 13:55:57 - INFO - BEGIN (implicit)
+2025-04-04 13:55:57 - INFO - PRAGMA main.table_info("entidades")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA temp.table_info("entidades")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA main.table_info("empresas")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA temp.table_info("empresas")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA main.table_info("consorcios")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA temp.table_info("consorcios")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA main.table_info("consorcios_empresas_m2m")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA temp.table_info("consorcios_empresas_m2m")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA main.table_info("obras")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA temp.table_info("obras")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA main.table_info("documentos")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA temp.table_info("documentos")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA main.table_info("tipos_documento")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - PRAGMA temp.table_info("tipos_documento")
+2025-04-04 13:55:57 - INFO - [raw sql] ()
+2025-04-04 13:55:57 - INFO - 
+CREATE TABLE entidades (
+	id INTEGER NOT NULL, 
+	nombre VARCHAR, 
+	PRIMARY KEY (id)
+)
+
+
+2025-04-04 13:55:57 - INFO - [no key 0.00011s] ()
+2025-04-04 13:55:57 - INFO - 
+CREATE TABLE empresas (
+	id INTEGER NOT NULL, 
+	nombre VARCHAR, 
+	ruc INTEGER, 
+	PRIMARY KEY (id)
+)
+
+
+2025-04-04 13:55:57 - INFO - [no key 0.00023s] ()
+2025-04-04 13:55:57 - INFO - 
+CREATE TABLE consorcios (
+	id INTEGER NOT NULL, 
+	nombre VARCHAR, 
+	PRIMARY KEY (id)
+)
+
+
+2025-04-04 13:55:57 - INFO - [no key 0.00034s] ()
+2025-04-04 13:55:57 - INFO - 
+CREATE TABLE tipos_documento (
+	id INTEGER NOT NULL, 
+	tipo VARCHAR NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2025-04-04 13:55:57 - INFO - [no key 0.00042s] ()
+2025-04-04 13:55:57 - INFO - 
+CREATE TABLE consorcios_empresas_m2m (
+	id INTEGER NOT NULL, 
+	empresa_id INTEGER NOT NULL, 
+	consorcio_id INTEGER NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(empresa_id) REFERENCES empresas (id), 
+	FOREIGN KEY(consorcio_id) REFERENCES consorcios (id)
+)
+
+
+2025-04-04 13:55:57 - INFO - [no key 0.00048s] ()
+2025-04-04 13:55:57 - INFO - 
+CREATE TABLE obras (
+	id INTEGER NOT NULL, 
+	nombre VARCHAR, 
+	consorcio INTEGER, 
+	empresa INTEGER, 
+	monto FLOAT, 
+	entidad INTEGER, 
+	fecha_contrato DATE, 
+	"fecha_recepción" DATE, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(consorcio) REFERENCES consorcios (id), 
+	FOREIGN KEY(empresa) REFERENCES empresas (id), 
+	FOREIGN KEY(entidad) REFERENCES entidades (id)
+)
+
+
+2025-04-04 13:55:57 - INFO - [no key 0.00067s] ()
+2025-04-04 13:55:57 - INFO - 
+CREATE TABLE documentos (
+	id INTEGER NOT NULL, 
+	nombre VARCHAR, 
+	obra_id INTEGER, 
+	tipo_id INTEGER, 
+	archivo BLOB, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(obra_id) REFERENCES obras (id), 
+	FOREIGN KEY(tipo_id) REFERENCES tipos_documento (id)
+)
+
+
+2025-04-04 13:55:57 - INFO - [no key 0.00045s] ()
+2025-04-04 13:55:57 - INFO - COMMIT
