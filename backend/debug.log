@@ -109,3 +109,25 @@ CREATE TABLE documentos (
 
 2025-04-04 13:55:57 - INFO - [no key 0.00045s] ()
 2025-04-04 13:55:57 - INFO - COMMIT
+2025-04-08 14:57:09 - INFO - BEGIN (implicit)
+2025-04-08 14:57:09 - INFO - SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite~_%' ESCAPE '~' ORDER BY name
+2025-04-08 14:57:09 - INFO - [raw sql] ()
+2025-04-08 14:57:09 - INFO - ROLLBACK
+2025-04-08 14:57:09 - INFO - BEGIN (implicit)
+2025-04-08 14:57:09 - INFO - PRAGMA main.table_info("entidades")
+2025-04-08 14:57:09 - INFO - [raw sql] ()
+2025-04-08 14:57:09 - INFO - PRAGMA main.table_info("empresas")
+2025-04-08 14:57:09 - INFO - [raw sql] ()
+2025-04-08 14:57:09 - INFO - PRAGMA main.table_info("consorcios")
+2025-04-08 14:57:09 - INFO - [raw sql] ()
+2025-04-08 14:57:09 - INFO - PRAGMA main.table_info("consorcios_empresas_m2m")
+2025-04-08 14:57:09 - INFO - [raw sql] ()
+2025-04-08 14:57:09 - INFO - PRAGMA main.table_info("obras")
+2025-04-08 14:57:09 - INFO - [raw sql] ()
+2025-04-08 14:57:09 - INFO - PRAGMA main.table_info("documentos")
+2025-04-08 14:57:09 - INFO - [raw sql] ()
+2025-04-08 14:57:09 - INFO - PRAGMA main.table_info("tipos_documento")
+2025-04-08 14:57:09 - INFO - [raw sql] ()
+2025-04-08 14:57:09 - INFO - COMMIT
+2025-04-08 15:19:04 - INFO - <sqlalchemy.engine.cursor.CursorResult object at 0x7fa1bd26fee0>
+2025-04-08 15:20:15 - INFO - <sqlalchemy.engine.cursor.CursorResult object at 0x7f9b1f4e7ee0>
