@@ -22,6 +22,11 @@ function Navbar({
       component: () => activateComponent("Query"),
       text: "Query",
     },
+    {
+      id: "consorcios",
+      component: () => activateComponent("Consorcios"),
+      text: "Consorcios",
+    },
   ];
 
   function NavbarComponent({ data }: { data: NavbarItemProps[] }) {

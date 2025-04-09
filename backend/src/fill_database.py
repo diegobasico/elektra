@@ -27,8 +27,8 @@ with Session(engine) as session:
 
         ins = empresas.insert().values(
             [
-                {"nombre": "Diego Antonio Ugaz Medina"},
-                {"nombre": "Ugaz & Ugaz Ingenieros"}
+                {"nombre": "Diego Antonio Ugaz Medina", "ruc": "10166550373"},
+                {"nombre": "Ugaz & Ugaz Ingenieros", "ruc": "20561275344"}
             ]
         )
 
@@ -37,15 +37,21 @@ with Session(engine) as session:
         ins = consorcios.insert().values(
             [
                 {"nombre": "Consorcio Cemayo"},
-                {"nombre": "Consorcio Complejo Pítipo"},
-                {"nombre": "Consorcio Constructor"},
+                {"nombre": "Consorcio Complejo Deportivo"},
+                {"nombre": "Consorcio Constructor/POLIFAP"},
+                {"nombre": "Consorcio Constructor/Máncora"},
                 {"nombre": "Consorcio Cumbre III"},
-                {"nombre": "Consorcio del Norte"},
+                {"nombre": "Consorcio del Norte/El Imperial"},
+                {"nombre": "Consorcio del Norte/Mochumí"},
+                {"nombre": "Consorcio del Norte/MMUVALL"},
+                {"nombre": "Consorcio del Norte/Tecapa"},
+                {"nombre": "Consorcio del Norte/Lambayeque"},
                 {"nombre": "Consorcio Dos"},
                 {"nombre": "Consorcio Econvisa"},
                 {"nombre": "Consorcio Edifica Perú"},
                 {"nombre": "Consorcio Imperial"},
-                {"nombre": "Consorcio Ingeniería"},
+                {"nombre": "Consorcio Ingeniería/Seoane"},
+                {"nombre": "Consorcio Ingeniería/Mochumí"},
                 {"nombre": "Consorcio Ingenieros"},
                 {"nombre": "Consorcio Jaén"},
                 {"nombre": "Consorcio Jotoro"},
@@ -53,25 +59,29 @@ with Session(engine) as session:
                 {"nombre": "Consorcio La Unión"},
                 {"nombre": "Consorcio Nimaos"},
                 {"nombre": "Consorcio Nueva Arica"},
-                {"nombre": "Consorcio Salvador"},
+                {"nombre": "Consorcio Ejecutor Salvador"},
                 {"nombre": "Consorcio San Antonio"},
                 {"nombre": "Consorcio San Carlos"},
-                {"nombre": "Consorcio San José"},
-                {"nombre": "Consorcio San José"},
+                {"nombre": "Consorcio San José/Parque"},
+                {"nombre": "Consorcio San José/La Pava"},
                 {"nombre": "Consorcio San Juan Masías"},
-                {"nombre": "Consorcio Santa Rosa"},
+                {"nombre": "Consorcio Santa Rosa/C-8"},
+                {"nombre": "Consorcio Santa Rosa/Diego Ferré"},
                 {"nombre": "Consorcio Tres"},
                 {"nombre": "Consorcio Uno"},
                 {"nombre": "Consorcio Vial Cúneo"},
-                {"nombre": "Consorcio Vial Ingeniería Huarmey"},
-                {"nombre": "Consorcio Vial Ingeniería Túcume"},
-                {"nombre": "Consorcio Vial Ingeniería Vivienda"},
+                {"nombre": "Consorcio Vial Ingeniería/Huarmey"},
+                {"nombre": "Consorcio Vial Ingeniería/Túcume"},
+                {"nombre": "Consorcio Vial Ingeniería/Paita"},
                 {"nombre": "Consorcio Vial Tarapoto"},
                 {"nombre": "Consorcio Vial Valle Hermoso"},
-                {"nombre": "Consorcio Victoria"},
+                {"nombre": "Consorcio Victoria/Olmos"},
+                {"nombre": "Consorcio Victoria/Mochumí"},
                 {"nombre": "Consorcio Virgen de Fátima"},
             ]
         )
+
+        session.execute(ins)
 
         session.commit()
     except Exception as e:

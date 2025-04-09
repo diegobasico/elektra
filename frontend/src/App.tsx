@@ -2,12 +2,14 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Insert from "./components/Insert";
 import Query from "./components/Query";
+import Consorcios from "./components/Consorcios";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("Insert");
   const componentMap: { [key: string]: React.JSX.Element } = {
     Insert: <Insert />,
     Query: <Query />,
+    Consorcios: <Consorcios />,
   };
 
   return (
