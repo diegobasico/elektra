@@ -3,23 +3,43 @@ import axios from "axios";
 
 import { registerAllModules } from "handsontable/registry";
 import { HotTable, HotTableRef } from "@handsontable/react-wrapper";
-import Handsontable from "handsontable";
 
 registerAllModules();
 
 function Consorcios() {
-  const [tableData, setTableData] = useState([[null]]);
-  const [consorciosDropdown, setconsorciosDropdown] = useState([]);
-  const [empresasDropdown, setEmpresasDropdown] = useState([]);
+  // const [tableData, setTableData] = useState([[null]]);
+  const [consorciosDropdown, setConsorciosDropdown] = useState([""]);
+  const [empresasDropdown, setEmpresasDropdown] = useState([""]);
   const hotRef = useRef<HotTableRef>(null);
+
+  type Empresa = {
+    id: number;
+    nombre: string;
+    ruc: number;
+  };
+
+  type Consorcio = {
+    id: number;
+    nombre: string;
+  };
 
   useEffect(() => {
     const fetchDropdowns = async () => {
       try {
-        const consorcios = await axios.get("http://localhost:8000/consorcios");
-        setconsorciosDropdown(consorcios.data);
-        const empresas = await axios.get("http://localhost:8000/empresas");
-        setEmpresasDropdown(empresas.data);
+        const [consorciosResponse, empresasResponse] = await Promise.all([
+          axios.get("http://localhost:8000/consorcios"),
+          axios.get("http://localhost:8000/empresas"),
+        ]);
+
+        const empresas = empresasResponse.data;
+        const consorcios = consorciosResponse.data;
+
+        const extractNames = (items: Empresa[] | Consorcio[]) => {
+          return items.map((item) => item.nombre);
+        };
+
+        setEmpresasDropdown(extractNames(empresas));
+        setConsorciosDropdown(extractNames(consorcios));
       } catch (error) {
         console.error("Error fetching dropdowns:", error);
       }
@@ -28,11 +48,13 @@ function Consorcios() {
     fetchDropdowns();
   }, []);
 
-  async function sendTableData(data: Handsontable.CellValue[]) {
+  async function sendTableData() {
+    const hot = hotRef.current?.hotInstance;
+
     try {
       await axios.post(
-        "http://127.0.0.1:8000/ppto",
-        { table: data },
+        "http://127.0.0.1:8000/consorcios_empresas_m2m",
+        { table: hot?.getData() },
         {
           headers: { "Content-Type": "application/json" },
         },
@@ -44,23 +66,16 @@ function Consorcios() {
 
   return (
     <div className="flex h-full w-full flex-col">
-      <span className="p-4 text-3xl">Let's Insert!</span>
+      <div className="p-4">
+        <span className="text-3xl">Let's Insert!</span>
+        <button className="border" onClick={sendTableData}>
+          send data
+        </button>
+      </div>
       {/* Hands On Table Component */}
       <div className="ht-theme-main overflow-y-auto">
         <HotTable
           ref={hotRef}
-          // hot reloads the sheet with every change
-          afterChange={function (
-            changes: Handsontable.CellChange[] | null,
-            source: Handsontable.ChangeSource,
-          ) {
-            const hot = hotRef.current?.hotInstance;
-            if (changes && source !== "loadData" && hot) {
-              let newTable = hot.getData();
-              // sendTableData(newTable);
-            }
-          }}
-          data={tableData}
           columns={[
             {
               type: "dropdown", // Consorcio
@@ -70,13 +85,19 @@ function Consorcios() {
               type: "dropdown", // Empresa
               source: empresasDropdown,
             },
+            {
+              type: "numeric", // Participación
+              numericFormat: {
+                pattern: "0.00%",
+              },
+            },
           ]}
           rowHeaders={false}
-          colHeaders={["Consorcio", "Empresa"]}
+          colHeaders={["Consorcio", "Empresa", "Participación"]}
           autoWrapRow={true}
           autoWrapCol={true}
           licenseKey="non-commercial-and-evaluation"
-          minSpareRows={10}
+          minSpareRows={1}
           stretchH="all"
           width="100%"
           height="auto"

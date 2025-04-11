@@ -1,5 +1,5 @@
-backend/data/
-!backend/data/.gitkeep
+backend/data/*
+!.git*
 
 frontend/node_modules
 
