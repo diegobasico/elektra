@@ -49,7 +49,7 @@ class Consorcio(Base):
     nombre = Column(String, unique=True)
 
     def __repr__(self) -> str:
-        return f"Empresa(id={self.id!r}, nombre={self.nombre!r}"
+        return f"Empresa(id={self.id!r}, nombre={self.nombre!r})"
 
     def as_dict(self) -> dict:
         return {col.name: getattr(self, col.name) for col in self.__table__.columns}
@@ -64,7 +64,7 @@ class ConsorcioEmpresaM2M(Base):
     participación = Column(Float, nullable=False)
 
     def __repr__(self) -> str:
-        return f"ConsorcioEmpresaM2M(id={self.id!r}, consorcio_id={self.consorcio_id!r}, empresa_id={self.empresa_id!r}, participación={self.participación!r}"
+        return f"ConsorcioEmpresaM2M(id={self.id!r}, consorcio_id={self.consorcio_id!r}, empresa_id={self.empresa_id!r}, participación={self.participación!r})"
 
     def as_dict(self) -> dict:
         return {col.name: getattr(self, col.name) for col in self.__table__.columns}
@@ -83,7 +83,7 @@ class Obra(Base):
     fecha_recepción = Column(Date)
 
     def __repr__(self) -> str:
-        return f"Obra(id={self.id!r}"
+        return f"Obra(id={self.id!r})"
 
     def as_dict(self) -> dict:
         return {col.name: getattr(self, col.name) for col in self.__table__.columns}
@@ -99,7 +99,7 @@ class Documento(Base):
     archivo = Column(LargeBinary)
 
     def __repr__(self) -> str:
-        return f"Documento(id={self.id!r}"
+        return f"Documento(id={self.id!r})"
 
     def as_dict(self) -> dict:
         return {col.name: getattr(self, col.name) for col in self.__table__.columns}
