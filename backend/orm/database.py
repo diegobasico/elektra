@@ -6,7 +6,7 @@ from orm.data import empresas, consorcios
 
 
 engine = create_engine("sqlite:///data/database.db", echo=True)
-ses = sessionmaker(bind=engine, autoflush=False, autocommit=False)
+session = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 
 
 def fill_database(ses: sessionmaker[Session], empresas: list, consorcios: list):
@@ -24,4 +24,4 @@ def fill_database(ses: sessionmaker[Session], empresas: list, consorcios: list):
 
 if __name__ == "__main__":
     Base.metadata.create_all(engine)
-    fill_database(ses, empresas, consorcios)
+    fill_database(session, empresas, consorcios)

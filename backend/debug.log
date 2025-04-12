@@ -3357,3 +3357,1212 @@ sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint fail
 2025-04-10 22:40:47 - INFO - Application shutdown complete.
 2025-04-10 22:40:47 - INFO - Finished server process [53002]
 2025-04-10 22:40:47 - INFO - Stopping reloader process [21142]
+2025-04-11 19:18:37 - INFO - BEGIN (implicit)
+2025-04-11 19:18:37 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 19:18:37 - INFO - [generated in 0.00027s] ('Ugaz & Ugaz Ingenieros',)
+2025-04-11 19:18:37 - INFO - COMMIT
+2025-04-11 19:20:11 - INFO - BEGIN (implicit)
+2025-04-11 19:20:11 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 19:20:11 - INFO - [generated in 0.00039s] ('Ugaz & Ugaz Ingenieros',)
+2025-04-11 19:20:11 - INFO - COMMIT
+2025-04-11 19:20:31 - INFO - BEGIN (implicit)
+2025-04-11 19:20:31 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 19:20:31 - INFO - [generated in 0.00035s] ('Ugaz & Ugaz Ingenieros',)
+2025-04-11 19:20:31 - INFO - COMMIT
+2025-04-11 19:33:36 - INFO - Will watch for changes in these directories: ['/home/diego/Canotila/elektra/backend']
+2025-04-11 19:33:36 - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-04-11 19:33:36 - INFO - Started reloader process [14471] using WatchFiles
+2025-04-11 19:33:37 - INFO - Started server process [14473]
+2025-04-11 19:33:37 - INFO - Waiting for application startup.
+2025-04-11 19:33:37 - INFO - Application startup complete.
+2025-04-11 19:33:37 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:34:26 - INFO - BEGIN (implicit)
+2025-04-11 19:34:26 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:34:26 - INFO - [generated in 0.00117s] ()
+2025-04-11 19:34:26 - INFO - COMMIT
+2025-04-11 19:34:26 - INFO - BEGIN (implicit)
+2025-04-11 19:34:26 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:34:26 - INFO - [generated in 0.00028s] ()
+2025-04-11 19:34:26 - INFO - COMMIT
+2025-04-11 19:34:26 - INFO - BEGIN (implicit)
+2025-04-11 19:34:26 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:34:26 - INFO - [cached since 0.01153s ago] ()
+2025-04-11 19:34:26 - INFO - COMMIT
+2025-04-11 19:34:26 - INFO - BEGIN (implicit)
+2025-04-11 19:34:26 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:34:26 - INFO - [cached since 0.00668s ago] ()
+2025-04-11 19:34:26 - INFO - COMMIT
+2025-04-11 19:34:26 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:34:48 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/src/main.py')}
+2025-04-11 19:34:48 - WARNING - WatchFiles detected changes in 'src/main.py'. Reloading...
+2025-04-11 19:34:48 - INFO - Shutting down
+2025-04-11 19:34:48 - INFO - Waiting for application shutdown.
+2025-04-11 19:34:48 - INFO - Application shutdown complete.
+2025-04-11 19:34:48 - INFO - Finished server process [14473]
+2025-04-11 19:34:49 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:34:49 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:34:49 - INFO - Started server process [15197]
+2025-04-11 19:34:49 - INFO - Waiting for application startup.
+2025-04-11 19:34:49 - INFO - Application startup complete.
+2025-04-11 19:34:49 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/src/__pycache__/main.cpython-313.pyc'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/src/__pycache__')}
+2025-04-11 19:35:57 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/src/main.py')}
+2025-04-11 19:35:57 - WARNING - WatchFiles detected changes in 'src/main.py'. Reloading...
+2025-04-11 19:35:57 - INFO - Shutting down
+2025-04-11 19:35:57 - INFO - Waiting for application shutdown.
+2025-04-11 19:35:57 - INFO - Application shutdown complete.
+2025-04-11 19:35:57 - INFO - Finished server process [15197]
+2025-04-11 19:35:57 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:35:58 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/src/__pycache__/main.cpython-313.pyc'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/src/__pycache__')}
+2025-04-11 19:35:58 - INFO - Started server process [15404]
+2025-04-11 19:35:58 - INFO - Waiting for application startup.
+2025-04-11 19:35:58 - INFO - Application startup complete.
+2025-04-11 19:35:58 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:36:36 - INFO - BEGIN (implicit)
+2025-04-11 19:36:36 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 19:36:36 - INFO - [generated in 0.00052s] ('Consorcio Complejo Deportivo',)
+2025-04-11 19:36:36 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 19:36:36 - INFO - [generated in 0.00048s] ('Ugaz & Ugaz Ingenieros',)
+2025-04-11 19:36:36 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 19:36:36 - INFO - [cached since 0.006502s ago] ('Consorcio Cemayo',)
+2025-04-11 19:36:36 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 19:36:36 - INFO - [cached since 0.003325s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 19:36:36 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 19:36:36 - INFO - [generated in 0.00024s (insertmanyvalues) 1/2 (ordered; batch not supported)] (2, 2, 0.2)
+2025-04-11 19:36:36 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 19:36:36 - INFO - [insertmanyvalues 2/2 (ordered; batch not supported)] (1, 1, 0.1)
+2025-04-11 19:36:36 - INFO - COMMIT
+2025-04-11 19:36:36 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 19:37:30 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 19:37:30 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:40:23 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 19:40:24 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:40:24 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:41:33 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/src/main.py')}
+2025-04-11 19:41:33 - WARNING - WatchFiles detected changes in 'src/main.py'. Reloading...
+2025-04-11 19:41:33 - INFO - Shutting down
+2025-04-11 19:41:33 - INFO - Waiting for application shutdown.
+2025-04-11 19:41:33 - INFO - Application shutdown complete.
+2025-04-11 19:41:33 - INFO - Finished server process [15404]
+2025-04-11 19:41:34 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:41:34 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:41:34 - INFO - Started server process [16443]
+2025-04-11 19:41:34 - INFO - Waiting for application startup.
+2025-04-11 19:41:34 - INFO - Application startup complete.
+2025-04-11 19:41:34 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/src/__pycache__/main.cpython-313.pyc'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/src/__pycache__')}
+2025-04-11 19:45:25 - INFO - BEGIN (implicit)
+2025-04-11 19:45:25 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:45:25 - INFO - [generated in 0.00045s] ()
+2025-04-11 19:45:25 - INFO - COMMIT
+2025-04-11 19:45:25 - INFO - BEGIN (implicit)
+2025-04-11 19:45:25 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:45:25 - INFO - [generated in 0.00039s] ()
+2025-04-11 19:45:25 - INFO - COMMIT
+2025-04-11 19:45:25 - INFO - BEGIN (implicit)
+2025-04-11 19:45:25 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:45:25 - INFO - [cached since 0.01391s ago] ()
+2025-04-11 19:45:25 - INFO - COMMIT
+2025-04-11 19:45:25 - INFO - BEGIN (implicit)
+2025-04-11 19:45:25 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:45:25 - INFO - [cached since 0.009633s ago] ()
+2025-04-11 19:45:25 - INFO - COMMIT
+2025-04-11 19:45:25 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:45:39 - INFO - BEGIN (implicit)
+2025-04-11 19:45:39 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:45:39 - INFO - [cached since 14.12s ago] ()
+2025-04-11 19:45:39 - INFO - COMMIT
+2025-04-11 19:45:39 - INFO - BEGIN (implicit)
+2025-04-11 19:45:39 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:45:39 - INFO - [cached since 14.12s ago] ()
+2025-04-11 19:45:39 - INFO - COMMIT
+2025-04-11 19:45:39 - INFO - BEGIN (implicit)
+2025-04-11 19:45:39 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:45:39 - INFO - [cached since 14.14s ago] ()
+2025-04-11 19:45:39 - INFO - COMMIT
+2025-04-11 19:45:39 - INFO - BEGIN (implicit)
+2025-04-11 19:45:39 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:45:39 - INFO - [cached since 14.13s ago] ()
+2025-04-11 19:45:39 - INFO - COMMIT
+2025-04-11 19:45:39 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:47:10 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 19:47:10 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:49:27 - INFO - BEGIN (implicit)
+2025-04-11 19:49:27 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:49:27 - INFO - [cached since 242.4s ago] ()
+2025-04-11 19:49:27 - INFO - COMMIT
+2025-04-11 19:49:27 - INFO - BEGIN (implicit)
+2025-04-11 19:49:27 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:49:27 - INFO - [cached since 242.4s ago] ()
+2025-04-11 19:49:27 - INFO - COMMIT
+2025-04-11 19:49:27 - INFO - BEGIN (implicit)
+2025-04-11 19:49:27 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:49:27 - INFO - [cached since 242.4s ago] ()
+2025-04-11 19:49:27 - INFO - COMMIT
+2025-04-11 19:49:27 - INFO - BEGIN (implicit)
+2025-04-11 19:49:27 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:49:27 - INFO - [cached since 242.4s ago] ()
+2025-04-11 19:49:27 - INFO - COMMIT
+2025-04-11 19:49:27 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:50:43 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 19:50:43 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:50:48 - INFO - BEGIN (implicit)
+2025-04-11 19:50:48 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:50:48 - INFO - [cached since 323.1s ago] ()
+2025-04-11 19:50:48 - INFO - COMMIT
+2025-04-11 19:50:48 - INFO - BEGIN (implicit)
+2025-04-11 19:50:48 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:50:48 - INFO - [cached since 323.1s ago] ()
+2025-04-11 19:50:48 - INFO - COMMIT
+2025-04-11 19:50:48 - INFO - BEGIN (implicit)
+2025-04-11 19:50:48 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:50:48 - INFO - [cached since 323.1s ago] ()
+2025-04-11 19:50:48 - INFO - COMMIT
+2025-04-11 19:50:48 - INFO - BEGIN (implicit)
+2025-04-11 19:50:48 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:50:48 - INFO - [cached since 323.1s ago] ()
+2025-04-11 19:50:48 - INFO - COMMIT
+2025-04-11 19:50:48 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:52:30 - INFO - BEGIN (implicit)
+2025-04-11 19:52:30 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 19:52:30 - INFO - [generated in 0.00059s] ('Consorcio Cemayo',)
+2025-04-11 19:52:30 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 19:52:30 - INFO - [generated in 0.00043s] ('Constructora & Consultora CEMAYU S.A.C.',)
+2025-04-11 19:52:30 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 19:52:30 - INFO - [cached since 0.006012s ago] ('Consorcio Cemayo',)
+2025-04-11 19:52:30 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 19:52:30 - INFO - [cached since 0.003434s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 19:52:30 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 19:52:30 - INFO - [generated in 0.00014s (insertmanyvalues) 1/2 (ordered; batch not supported)] (1, 3, 0.4)
+2025-04-11 19:52:30 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 19:52:30 - INFO - [insertmanyvalues 2/2 (ordered; batch not supported)] (1, 1, 0.6)
+2025-04-11 19:52:30 - INFO - COMMIT
+2025-04-11 19:52:30 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 19:56:35 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 19:56:35 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:58:09 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 19:58:09 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:58:09 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:58:17 - INFO - BEGIN (implicit)
+2025-04-11 19:58:17 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:58:17 - INFO - [cached since 772.6s ago] ()
+2025-04-11 19:58:17 - INFO - COMMIT
+2025-04-11 19:58:17 - INFO - BEGIN (implicit)
+2025-04-11 19:58:17 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:58:17 - INFO - [cached since 772.6s ago] ()
+2025-04-11 19:58:17 - INFO - COMMIT
+2025-04-11 19:58:17 - INFO - BEGIN (implicit)
+2025-04-11 19:58:17 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:58:17 - INFO - [cached since 772.6s ago] ()
+2025-04-11 19:58:17 - INFO - COMMIT
+2025-04-11 19:58:17 - INFO - BEGIN (implicit)
+2025-04-11 19:58:17 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:58:17 - INFO - [cached since 772.6s ago] ()
+2025-04-11 19:58:17 - INFO - COMMIT
+2025-04-11 19:58:18 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:58:18 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 19:59:45 - INFO - BEGIN (implicit)
+2025-04-11 19:59:45 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 19:59:45 - INFO - [cached since 435s ago] ('Consorcio Complejo Deportivo',)
+2025-04-11 19:59:45 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 19:59:45 - INFO - [cached since 435s ago] ('Constructora Tambo Real C & V Servicios Generales S.A.C.',)
+2025-04-11 19:59:45 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 19:59:45 - INFO - [cached since 435s ago] ('Consorcio Complejo Deportivo',)
+2025-04-11 19:59:45 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 19:59:45 - INFO - [cached since 435s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 19:59:45 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 19:59:45 - INFO - [cached since 435s ago (insertmanyvalues) 1/2 (ordered; batch not supported)] (2, 4, 0.5)
+2025-04-11 19:59:45 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 19:59:45 - INFO - [insertmanyvalues 2/2 (ordered; batch not supported)] (2, 1, 0.5)
+2025-04-11 19:59:45 - INFO - COMMIT
+2025-04-11 19:59:45 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 19:59:49 - INFO - BEGIN (implicit)
+2025-04-11 19:59:49 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:59:49 - INFO - [cached since 864.1s ago] ()
+2025-04-11 19:59:49 - INFO - COMMIT
+2025-04-11 19:59:49 - INFO - BEGIN (implicit)
+2025-04-11 19:59:49 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:59:49 - INFO - [cached since 864.1s ago] ()
+2025-04-11 19:59:49 - INFO - COMMIT
+2025-04-11 19:59:49 - INFO - BEGIN (implicit)
+2025-04-11 19:59:49 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 19:59:49 - INFO - [cached since 864.1s ago] ()
+2025-04-11 19:59:49 - INFO - COMMIT
+2025-04-11 19:59:49 - INFO - BEGIN (implicit)
+2025-04-11 19:59:49 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 19:59:49 - INFO - [cached since 864.1s ago] ()
+2025-04-11 19:59:49 - INFO - COMMIT
+2025-04-11 19:59:49 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:01:06 - INFO - BEGIN (implicit)
+2025-04-11 20:01:06 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:01:06 - INFO - [cached since 941.6s ago] ()
+2025-04-11 20:01:06 - INFO - COMMIT
+2025-04-11 20:01:06 - INFO - BEGIN (implicit)
+2025-04-11 20:01:06 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:01:06 - INFO - [cached since 941.7s ago] ()
+2025-04-11 20:01:06 - INFO - COMMIT
+2025-04-11 20:01:06 - INFO - BEGIN (implicit)
+2025-04-11 20:01:06 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:01:06 - INFO - [cached since 941.6s ago] ()
+2025-04-11 20:01:06 - INFO - COMMIT
+2025-04-11 20:01:06 - INFO - BEGIN (implicit)
+2025-04-11 20:01:06 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:01:06 - INFO - [cached since 941.7s ago] ()
+2025-04-11 20:01:06 - INFO - COMMIT
+2025-04-11 20:01:07 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:01:07 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:03:32 - INFO - BEGIN (implicit)
+2025-04-11 20:03:32 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:03:32 - INFO - [cached since 1088s ago] ()
+2025-04-11 20:03:32 - INFO - COMMIT
+2025-04-11 20:03:32 - INFO - BEGIN (implicit)
+2025-04-11 20:03:32 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:03:32 - INFO - [cached since 1088s ago] ()
+2025-04-11 20:03:32 - INFO - COMMIT
+2025-04-11 20:03:32 - INFO - BEGIN (implicit)
+2025-04-11 20:03:32 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:03:32 - INFO - [cached since 1088s ago] ()
+2025-04-11 20:03:32 - INFO - COMMIT
+2025-04-11 20:03:32 - INFO - BEGIN (implicit)
+2025-04-11 20:03:32 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:03:32 - INFO - [cached since 1088s ago] ()
+2025-04-11 20:03:32 - INFO - COMMIT
+2025-04-11 20:03:32 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:07:04 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:07:05 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:07:05 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:08:39 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:08:39 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:09:22 - INFO - BEGIN (implicit)
+2025-04-11 20:09:22 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:09:22 - INFO - [cached since 1438s ago] ()
+2025-04-11 20:09:22 - INFO - COMMIT
+2025-04-11 20:09:22 - INFO - BEGIN (implicit)
+2025-04-11 20:09:22 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:09:22 - INFO - [cached since 1438s ago] ()
+2025-04-11 20:09:22 - INFO - COMMIT
+2025-04-11 20:09:22 - INFO - BEGIN (implicit)
+2025-04-11 20:09:22 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:09:22 - INFO - [cached since 1438s ago] ()
+2025-04-11 20:09:22 - INFO - COMMIT
+2025-04-11 20:09:22 - INFO - BEGIN (implicit)
+2025-04-11 20:09:22 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:09:22 - INFO - [cached since 1438s ago] ()
+2025-04-11 20:09:22 - INFO - COMMIT
+2025-04-11 20:09:23 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:09:23 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:10:17 - INFO - BEGIN (implicit)
+2025-04-11 20:10:17 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:10:17 - INFO - [cached since 1066s ago] ('Consorcio Constructor/Máncora',)
+2025-04-11 20:10:17 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:10:17 - INFO - [cached since 1066s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:10:17 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:10:17 - INFO - [cached since 1066s ago] ('Consorcio Constructor/Máncora',)
+2025-04-11 20:10:17 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:10:17 - INFO - [cached since 1066s ago] ('Sólida S.A.C.',)
+2025-04-11 20:10:17 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:10:17 - INFO - [cached since 1067s ago] ('Consorcio Constructor/Máncora',)
+2025-04-11 20:10:17 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:10:17 - INFO - [cached since 1067s ago] ('Marco Erinson Gastulo Jiménez',)
+2025-04-11 20:10:17 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:10:17 - INFO - [cached since 1067s ago] ('Consorcio Constructor/Máncora',)
+2025-04-11 20:10:17 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:10:17 - INFO - [cached since 1067s ago] ('Juan Carlos Pareja Arenas',)
+2025-04-11 20:10:17 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:10:17 - INFO - [cached since 1066s ago (insertmanyvalues) 1/4 (ordered; batch not supported)] (4, 1, 0.01)
+2025-04-11 20:10:17 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:10:17 - INFO - [insertmanyvalues 2/4 (ordered; batch not supported)] (4, 5, 0.78)
+2025-04-11 20:10:17 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:10:17 - INFO - [insertmanyvalues 3/4 (ordered; batch not supported)] (4, 6, 0.2)
+2025-04-11 20:10:17 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:10:17 - INFO - [insertmanyvalues 4/4 (ordered; batch not supported)] (4, 7, 0.01)
+2025-04-11 20:10:17 - INFO - COMMIT
+2025-04-11 20:10:17 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 20:14:22 - INFO - BEGIN (implicit)
+2025-04-11 20:14:22 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:14:22 - INFO - [cached since 1312s ago] ('Consorcio Constructor/POLIFAP',)
+2025-04-11 20:14:22 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:14:22 - INFO - [cached since 1312s ago] ('Marco Erinson Gastulo Jiménez',)
+2025-04-11 20:14:22 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:14:22 - INFO - [cached since 1312s ago] ('Consorcio Constructor/POLIFAP',)
+2025-04-11 20:14:22 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:14:22 - INFO - [cached since 1312s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:14:22 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:14:22 - INFO - [cached since 1312s ago (insertmanyvalues) 1/2 (ordered; batch not supported)] (3, 6, 0.99)
+2025-04-11 20:14:22 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:14:22 - INFO - [insertmanyvalues 2/2 (ordered; batch not supported)] (3, 1, 0.01)
+2025-04-11 20:14:22 - INFO - COMMIT
+2025-04-11 20:14:22 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 20:15:46 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:15:46 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:16:11 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:16:12 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:16:12 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:16:33 - INFO - BEGIN (implicit)
+2025-04-11 20:16:33 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:16:33 - INFO - [cached since 1869s ago] ()
+2025-04-11 20:16:33 - INFO - COMMIT
+2025-04-11 20:16:33 - INFO - BEGIN (implicit)
+2025-04-11 20:16:33 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:16:33 - INFO - [cached since 1869s ago] ()
+2025-04-11 20:16:33 - INFO - COMMIT
+2025-04-11 20:16:33 - INFO - BEGIN (implicit)
+2025-04-11 20:16:33 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:16:33 - INFO - [cached since 1869s ago] ()
+2025-04-11 20:16:33 - INFO - COMMIT
+2025-04-11 20:16:33 - INFO - BEGIN (implicit)
+2025-04-11 20:16:33 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:16:33 - INFO - [cached since 1869s ago] ()
+2025-04-11 20:16:33 - INFO - COMMIT
+2025-04-11 20:16:34 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:16:34 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:22:04 - INFO - BEGIN (implicit)
+2025-04-11 20:22:04 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:22:04 - INFO - [cached since 1774s ago] ('Consorcio Cumbre III',)
+2025-04-11 20:22:04 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:22:04 - INFO - [cached since 1774s ago] ('Pacífico Ingenieros Asociados S.A.C.',)
+2025-04-11 20:22:04 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:22:04 - INFO - [cached since 1774s ago] ('Consorcio Cumbre III',)
+2025-04-11 20:22:04 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:22:04 - INFO - [cached since 1774s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:22:04 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:22:04 - INFO - [cached since 1774s ago (insertmanyvalues) 1/2 (ordered; batch not supported)] (5, 8, 0.49)
+2025-04-11 20:22:04 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:22:04 - INFO - [insertmanyvalues 2/2 (ordered; batch not supported)] (5, 1, 0.51)
+2025-04-11 20:22:04 - INFO - COMMIT
+2025-04-11 20:22:04 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 20:22:04 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:23:56 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:23:57 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:23:57 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:24:40 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:24:40 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:26:34 - INFO - BEGIN (implicit)
+2025-04-11 20:26:34 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:26:34 - INFO - [cached since 2469s ago] ()
+2025-04-11 20:26:34 - INFO - COMMIT
+2025-04-11 20:26:34 - INFO - BEGIN (implicit)
+2025-04-11 20:26:34 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:26:34 - INFO - [cached since 2469s ago] ()
+2025-04-11 20:26:34 - INFO - COMMIT
+2025-04-11 20:26:34 - INFO - BEGIN (implicit)
+2025-04-11 20:26:34 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:26:34 - INFO - [cached since 2469s ago] ()
+2025-04-11 20:26:34 - INFO - COMMIT
+2025-04-11 20:26:34 - INFO - BEGIN (implicit)
+2025-04-11 20:26:34 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:26:34 - INFO - [cached since 2469s ago] ()
+2025-04-11 20:26:34 - INFO - COMMIT
+2025-04-11 20:26:34 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:27:51 - INFO - BEGIN (implicit)
+2025-04-11 20:27:51 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:27:51 - INFO - [cached since 2121s ago] ('Consorcio del Norte/Tecapa',)
+2025-04-11 20:27:51 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:27:51 - INFO - [cached since 2121s ago] ('Construamérica E.I.R.L.',)
+2025-04-11 20:27:51 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:27:51 - INFO - [cached since 2121s ago] ('Consorcio del Norte/Tecapa',)
+2025-04-11 20:27:51 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:27:51 - INFO - [cached since 2121s ago] ("Corporación César's S.A.C.",)
+2025-04-11 20:27:51 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:27:51 - INFO - [cached since 2121s ago] ('Consorcio del Norte/Tecapa',)
+2025-04-11 20:27:51 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:27:51 - INFO - [cached since 2121s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:27:51 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:27:51 - INFO - [cached since 2121s ago (insertmanyvalues) 1/3 (ordered; batch not supported)] (9, 9, 0.4)
+2025-04-11 20:27:51 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:27:51 - INFO - [insertmanyvalues 2/3 (ordered; batch not supported)] (9, 10, 0.1)
+2025-04-11 20:27:51 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:27:51 - INFO - [insertmanyvalues 3/3 (ordered; batch not supported)] (9, 1, 0.5)
+2025-04-11 20:27:51 - INFO - COMMIT
+2025-04-11 20:27:51 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 20:28:06 - INFO - BEGIN (implicit)
+2025-04-11 20:28:06 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:28:06 - INFO - [cached since 2561s ago] ()
+2025-04-11 20:28:06 - INFO - COMMIT
+2025-04-11 20:28:06 - INFO - BEGIN (implicit)
+2025-04-11 20:28:06 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:28:06 - INFO - [cached since 2561s ago] ()
+2025-04-11 20:28:06 - INFO - COMMIT
+2025-04-11 20:28:06 - INFO - BEGIN (implicit)
+2025-04-11 20:28:06 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:28:06 - INFO - [cached since 2561s ago] ()
+2025-04-11 20:28:06 - INFO - COMMIT
+2025-04-11 20:28:06 - INFO - BEGIN (implicit)
+2025-04-11 20:28:06 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:28:06 - INFO - [cached since 2561s ago] ()
+2025-04-11 20:28:06 - INFO - COMMIT
+2025-04-11 20:28:06 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:29:45 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:29:45 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:29:45 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:30:22 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:30:22 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:31:27 - INFO - BEGIN (implicit)
+2025-04-11 20:31:27 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:31:27 - INFO - [cached since 2762s ago] ()
+2025-04-11 20:31:27 - INFO - COMMIT
+2025-04-11 20:31:27 - INFO - BEGIN (implicit)
+2025-04-11 20:31:27 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:31:27 - INFO - [cached since 2762s ago] ()
+2025-04-11 20:31:27 - INFO - COMMIT
+2025-04-11 20:31:27 - INFO - BEGIN (implicit)
+2025-04-11 20:31:27 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:31:27 - INFO - [cached since 2762s ago] ()
+2025-04-11 20:31:27 - INFO - COMMIT
+2025-04-11 20:31:27 - INFO - BEGIN (implicit)
+2025-04-11 20:31:27 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:31:27 - INFO - [cached since 2762s ago] ()
+2025-04-11 20:31:27 - INFO - COMMIT
+2025-04-11 20:31:27 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:32:03 - INFO - BEGIN (implicit)
+2025-04-11 20:32:03 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:32:03 - INFO - [cached since 2373s ago] ('Consorcio del Norte/Lambayeque',)
+2025-04-11 20:32:03 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:32:03 - INFO - [cached since 2373s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:32:03 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:32:03 - INFO - [cached since 2373s ago] ('Consorcio del Norte/Lambayeque',)
+2025-04-11 20:32:03 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:32:03 - INFO - [cached since 2373s ago] ("Corporación César's S.A.C.",)
+2025-04-11 20:32:03 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:32:03 - INFO - [cached since 2373s ago] ('Consorcio del Norte/Lambayeque',)
+2025-04-11 20:32:03 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:32:03 - INFO - [cached since 2373s ago] ('Construcciones Royal E.I.R.L.',)
+2025-04-11 20:32:03 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:32:03 - INFO - [cached since 2373s ago (insertmanyvalues) 1/3 (ordered; batch not supported)] (10, 1, 0.5)
+2025-04-11 20:32:03 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:32:03 - INFO - [insertmanyvalues 2/3 (ordered; batch not supported)] (10, 10, 0.1)
+2025-04-11 20:32:03 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:32:03 - INFO - [insertmanyvalues 3/3 (ordered; batch not supported)] (10, 11, 0.4)
+2025-04-11 20:32:03 - INFO - COMMIT
+2025-04-11 20:32:03 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 20:33:00 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:33:00 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:33:12 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:33:12 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:33:16 - INFO - BEGIN (implicit)
+2025-04-11 20:33:16 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:33:16 - INFO - [cached since 2871s ago] ()
+2025-04-11 20:33:16 - INFO - COMMIT
+2025-04-11 20:33:16 - INFO - BEGIN (implicit)
+2025-04-11 20:33:16 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:33:16 - INFO - [cached since 2871s ago] ()
+2025-04-11 20:33:16 - INFO - COMMIT
+2025-04-11 20:33:16 - INFO - BEGIN (implicit)
+2025-04-11 20:33:16 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:33:16 - INFO - [cached since 2871s ago] ()
+2025-04-11 20:33:16 - INFO - COMMIT
+2025-04-11 20:33:16 - INFO - BEGIN (implicit)
+2025-04-11 20:33:16 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:33:16 - INFO - [cached since 2871s ago] ()
+2025-04-11 20:33:16 - INFO - COMMIT
+2025-04-11 20:33:16 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:34:45 - INFO - BEGIN (implicit)
+2025-04-11 20:34:45 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:34:45 - INFO - [cached since 2535s ago] ('Consorcio del Norte/El Imperial',)
+2025-04-11 20:34:45 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:34:45 - INFO - [cached since 2535s ago] ('Tapia & Ugaz Ingenieros S.A.C.',)
+2025-04-11 20:34:45 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:34:45 - INFO - [cached since 2535s ago] ('Consorcio del Norte/El Imperial',)
+2025-04-11 20:34:45 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:34:45 - INFO - [cached since 2535s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:34:45 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:34:45 - INFO - [cached since 2535s ago (insertmanyvalues) 1/2 (ordered; batch not supported)] (6, 12, 0.99)
+2025-04-11 20:34:45 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:34:45 - INFO - [insertmanyvalues 2/2 (ordered; batch not supported)] (6, 1, 0.01)
+2025-04-11 20:34:45 - INFO - COMMIT
+2025-04-11 20:34:45 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 20:35:15 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:35:15 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:35:24 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:35:24 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:35:27 - INFO - BEGIN (implicit)
+2025-04-11 20:35:27 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:35:27 - INFO - [cached since 3002s ago] ()
+2025-04-11 20:35:27 - INFO - COMMIT
+2025-04-11 20:35:27 - INFO - BEGIN (implicit)
+2025-04-11 20:35:27 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:35:27 - INFO - [cached since 3002s ago] ()
+2025-04-11 20:35:27 - INFO - COMMIT
+2025-04-11 20:35:27 - INFO - BEGIN (implicit)
+2025-04-11 20:35:27 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:35:27 - INFO - [cached since 3002s ago] ()
+2025-04-11 20:35:27 - INFO - COMMIT
+2025-04-11 20:35:27 - INFO - BEGIN (implicit)
+2025-04-11 20:35:27 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:35:27 - INFO - [cached since 3002s ago] ()
+2025-04-11 20:35:27 - INFO - COMMIT
+2025-04-11 20:35:27 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:37:35 - INFO - BEGIN (implicit)
+2025-04-11 20:37:35 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:37:35 - INFO - [cached since 2705s ago] ('Consorcio del Norte/Mochumí',)
+2025-04-11 20:37:35 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:37:35 - INFO - [cached since 2705s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:37:35 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:37:35 - INFO - [cached since 2705s ago] ('Consorcio del Norte/Mochumí',)
+2025-04-11 20:37:35 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:37:35 - INFO - [cached since 2705s ago] ('Empresa Constructora Victoria S.A.',)
+2025-04-11 20:37:35 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:37:35 - INFO - [cached since 2705s ago (insertmanyvalues) 1/2 (ordered; batch not supported)] (7, 1, 0.995)
+2025-04-11 20:37:35 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:37:35 - INFO - [insertmanyvalues 2/2 (ordered; batch not supported)] (7, 13, 0.005)
+2025-04-11 20:37:35 - INFO - COMMIT
+2025-04-11 20:37:36 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 20:37:36 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:39:27 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:39:28 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:39:28 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:39:38 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:39:39 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:39:39 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:39:50 - INFO - BEGIN (implicit)
+2025-04-11 20:39:50 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:39:50 - INFO - [cached since 3266s ago] ()
+2025-04-11 20:39:50 - INFO - COMMIT
+2025-04-11 20:39:50 - INFO - BEGIN (implicit)
+2025-04-11 20:39:50 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:39:50 - INFO - [cached since 3266s ago] ()
+2025-04-11 20:39:50 - INFO - COMMIT
+2025-04-11 20:39:50 - INFO - BEGIN (implicit)
+2025-04-11 20:39:50 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:39:50 - INFO - [cached since 3266s ago] ()
+2025-04-11 20:39:50 - INFO - COMMIT
+2025-04-11 20:39:50 - INFO - BEGIN (implicit)
+2025-04-11 20:39:50 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:39:50 - INFO - [cached since 3266s ago] ()
+2025-04-11 20:39:50 - INFO - COMMIT
+2025-04-11 20:39:50 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:41:33 - INFO - BEGIN (implicit)
+2025-04-11 20:41:33 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:41:33 - INFO - [cached since 2943s ago] ('Consorcio del Norte/MMUVALL',)
+2025-04-11 20:41:33 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:41:33 - INFO - [cached since 2943s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:41:33 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:41:33 - INFO - [cached since 2943s ago] ('Consorcio del Norte/MMUVALL',)
+2025-04-11 20:41:33 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:41:33 - INFO - [cached since 2943s ago] ('Tapia & Ugaz Ingenieros S.A.C.',)
+2025-04-11 20:41:33 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:41:33 - INFO - [cached since 2943s ago] ('Consorcio del Norte/MMUVALL',)
+2025-04-11 20:41:33 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:41:33 - INFO - [cached since 2943s ago] ('Edilberto Tello Cabrera',)
+2025-04-11 20:41:33 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:41:33 - INFO - [cached since 2943s ago (insertmanyvalues) 1/3 (ordered; batch not supported)] (8, 1, 0.4906)
+2025-04-11 20:41:33 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:41:33 - INFO - [insertmanyvalues 2/3 (ordered; batch not supported)] (8, 12, 0.47)
+2025-04-11 20:41:33 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:41:33 - INFO - [insertmanyvalues 3/3 (ordered; batch not supported)] (8, 14, 0.0394)
+2025-04-11 20:41:33 - INFO - COMMIT
+2025-04-11 20:41:33 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 20:42:00 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:42:00 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:43:54 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:43:55 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:43:55 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:43:57 - INFO - BEGIN (implicit)
+2025-04-11 20:43:57 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:43:57 - INFO - [cached since 3513s ago] ()
+2025-04-11 20:43:57 - INFO - COMMIT
+2025-04-11 20:43:57 - INFO - BEGIN (implicit)
+2025-04-11 20:43:57 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:43:57 - INFO - [cached since 3513s ago] ()
+2025-04-11 20:43:57 - INFO - COMMIT
+2025-04-11 20:43:57 - INFO - BEGIN (implicit)
+2025-04-11 20:43:57 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:43:57 - INFO - [cached since 3513s ago] ()
+2025-04-11 20:43:57 - INFO - COMMIT
+2025-04-11 20:43:58 - INFO - BEGIN (implicit)
+2025-04-11 20:43:58 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:43:58 - INFO - [cached since 3513s ago] ()
+2025-04-11 20:43:58 - INFO - COMMIT
+2025-04-11 20:43:58 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:43:58 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:46:40 - INFO - BEGIN (implicit)
+2025-04-11 20:46:40 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:46:40 - INFO - [cached since 3250s ago] ('Consorcio Dos',)
+2025-04-11 20:46:40 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:46:40 - INFO - [cached since 3250s ago] ('Construcciones Alardi S.A.C.',)
+2025-04-11 20:46:40 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:46:40 - INFO - [cached since 3250s ago] ('Consorcio Dos',)
+2025-04-11 20:46:40 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:46:40 - INFO - [cached since 3250s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:46:40 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:46:40 - INFO - [cached since 3250s ago] ('Consorcio Econvisa',)
+2025-04-11 20:46:40 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:46:40 - INFO - [cached since 3250s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 20:46:40 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 20:46:40 - INFO - [cached since 3250s ago] ('Consorcio Econvisa',)
+2025-04-11 20:46:40 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 20:46:40 - INFO - [cached since 3250s ago] ('Empresa Constructora Victoria S.A.',)
+2025-04-11 20:46:40 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:46:40 - INFO - [cached since 3250s ago (insertmanyvalues) 1/4 (ordered; batch not supported)] (11, 15, 0.4)
+2025-04-11 20:46:40 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:46:40 - INFO - [insertmanyvalues 2/4 (ordered; batch not supported)] (11, 1, 0.6)
+2025-04-11 20:46:40 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:46:40 - INFO - [insertmanyvalues 3/4 (ordered; batch not supported)] (12, 1, 0.75)
+2025-04-11 20:46:40 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 20:46:40 - INFO - [insertmanyvalues 4/4 (ordered; batch not supported)] (12, 13, 0.25)
+2025-04-11 20:46:40 - INFO - COMMIT
+2025-04-11 20:46:41 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db')}
+2025-04-11 20:46:41 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:50:04 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:50:05 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:50:05 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:51:00 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:51:00 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:52:53 - INFO - BEGIN (implicit)
+2025-04-11 20:52:53 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:52:53 - INFO - [cached since 4048s ago] ()
+2025-04-11 20:52:53 - INFO - COMMIT
+2025-04-11 20:52:53 - INFO - BEGIN (implicit)
+2025-04-11 20:52:53 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:52:53 - INFO - [cached since 4048s ago] ()
+2025-04-11 20:52:53 - INFO - COMMIT
+2025-04-11 20:52:53 - INFO - BEGIN (implicit)
+2025-04-11 20:52:53 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:52:53 - INFO - [cached since 4048s ago] ()
+2025-04-11 20:52:53 - INFO - COMMIT
+2025-04-11 20:52:53 - INFO - BEGIN (implicit)
+2025-04-11 20:52:53 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:52:53 - INFO - [cached since 4048s ago] ()
+2025-04-11 20:52:53 - INFO - COMMIT
+2025-04-11 20:52:53 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:53:17 - INFO - BEGIN (implicit)
+2025-04-11 20:53:17 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:53:17 - INFO - [cached since 4073s ago] ()
+2025-04-11 20:53:17 - INFO - COMMIT
+2025-04-11 20:53:17 - INFO - BEGIN (implicit)
+2025-04-11 20:53:17 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:53:17 - INFO - [cached since 4073s ago] ()
+2025-04-11 20:53:17 - INFO - COMMIT
+2025-04-11 20:53:17 - INFO - BEGIN (implicit)
+2025-04-11 20:53:17 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:53:17 - INFO - [cached since 4073s ago] ()
+2025-04-11 20:53:17 - INFO - COMMIT
+2025-04-11 20:53:17 - INFO - BEGIN (implicit)
+2025-04-11 20:53:17 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:53:17 - INFO - [cached since 4073s ago] ()
+2025-04-11 20:53:17 - INFO - COMMIT
+2025-04-11 20:53:17 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:54:32 - INFO - BEGIN (implicit)
+2025-04-11 20:54:32 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:54:32 - INFO - [cached since 4148s ago] ()
+2025-04-11 20:54:32 - INFO - COMMIT
+2025-04-11 20:54:32 - INFO - BEGIN (implicit)
+2025-04-11 20:54:32 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:54:32 - INFO - [cached since 4148s ago] ()
+2025-04-11 20:54:32 - INFO - COMMIT
+2025-04-11 20:54:32 - INFO - BEGIN (implicit)
+2025-04-11 20:54:32 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:54:32 - INFO - [cached since 4148s ago] ()
+2025-04-11 20:54:32 - INFO - COMMIT
+2025-04-11 20:54:32 - INFO - BEGIN (implicit)
+2025-04-11 20:54:32 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:54:32 - INFO - [cached since 4148s ago] ()
+2025-04-11 20:54:32 - INFO - COMMIT
+2025-04-11 20:54:33 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:54:33 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:55:09 - DEBUG - 2 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data'), (<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal')}
+2025-04-11 20:55:09 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:55:10 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:55:11 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:55:11 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:55:18 - INFO - BEGIN (implicit)
+2025-04-11 20:55:18 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:55:18 - INFO - [cached since 4194s ago] ()
+2025-04-11 20:55:18 - INFO - COMMIT
+2025-04-11 20:55:18 - INFO - BEGIN (implicit)
+2025-04-11 20:55:18 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:55:18 - INFO - [cached since 4194s ago] ()
+2025-04-11 20:55:18 - INFO - COMMIT
+2025-04-11 20:55:18 - INFO - BEGIN (implicit)
+2025-04-11 20:55:18 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:55:18 - INFO - [cached since 4194s ago] ()
+2025-04-11 20:55:18 - INFO - COMMIT
+2025-04-11 20:55:18 - INFO - BEGIN (implicit)
+2025-04-11 20:55:18 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:55:18 - INFO - [cached since 4194s ago] ()
+2025-04-11 20:55:18 - INFO - COMMIT
+2025-04-11 20:55:18 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:55:44 - INFO - Shutting down
+2025-04-11 20:55:44 - INFO - Waiting for application shutdown.
+2025-04-11 20:55:44 - INFO - Application shutdown complete.
+2025-04-11 20:55:44 - INFO - Finished server process [16443]
+2025-04-11 20:55:44 - INFO - Stopping reloader process [14471]
+2025-04-11 20:55:47 - INFO - Will watch for changes in these directories: ['/home/diego/Canotila/elektra/backend']
+2025-04-11 20:55:47 - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-04-11 20:55:47 - INFO - Started reloader process [29706] using WatchFiles
+2025-04-11 20:55:48 - INFO - Started server process [29714]
+2025-04-11 20:55:48 - INFO - Waiting for application startup.
+2025-04-11 20:55:48 - INFO - Application startup complete.
+2025-04-11 20:55:48 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:55:56 - INFO - BEGIN (implicit)
+2025-04-11 20:55:56 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:55:56 - INFO - [generated in 0.00049s] ()
+2025-04-11 20:55:56 - INFO - COMMIT
+2025-04-11 20:55:56 - INFO - BEGIN (implicit)
+2025-04-11 20:55:56 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:55:56 - INFO - [generated in 0.00024s] ()
+2025-04-11 20:55:56 - INFO - COMMIT
+2025-04-11 20:55:56 - INFO - BEGIN (implicit)
+2025-04-11 20:55:56 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:55:56 - INFO - [cached since 0.01183s ago] ()
+2025-04-11 20:55:56 - INFO - COMMIT
+2025-04-11 20:55:56 - INFO - BEGIN (implicit)
+2025-04-11 20:55:56 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:55:56 - INFO - [cached since 0.006428s ago] ()
+2025-04-11 20:55:56 - INFO - COMMIT
+2025-04-11 20:55:56 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:56:04 - INFO - BEGIN (implicit)
+2025-04-11 20:56:04 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:56:04 - INFO - [cached since 8.271s ago] ()
+2025-04-11 20:56:04 - INFO - COMMIT
+2025-04-11 20:56:04 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:56:53 - DEBUG - 2 changes detected: {(<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:56:53 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:57:44 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 20:57:44 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:59:15 - INFO - BEGIN (implicit)
+2025-04-11 20:59:15 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:59:15 - INFO - [cached since 199.1s ago] ()
+2025-04-11 20:59:15 - INFO - COMMIT
+2025-04-11 20:59:15 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:59:26 - INFO - BEGIN (implicit)
+2025-04-11 20:59:26 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:59:26 - INFO - [cached since 210.4s ago] ()
+2025-04-11 20:59:26 - INFO - COMMIT
+2025-04-11 20:59:26 - INFO - BEGIN (implicit)
+2025-04-11 20:59:26 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:59:26 - INFO - [cached since 210.4s ago] ()
+2025-04-11 20:59:26 - INFO - COMMIT
+2025-04-11 20:59:26 - INFO - BEGIN (implicit)
+2025-04-11 20:59:26 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 20:59:26 - INFO - [cached since 210.4s ago] ()
+2025-04-11 20:59:26 - INFO - COMMIT
+2025-04-11 20:59:26 - INFO - BEGIN (implicit)
+2025-04-11 20:59:26 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 20:59:26 - INFO - [cached since 210.4s ago] ()
+2025-04-11 20:59:26 - INFO - COMMIT
+2025-04-11 20:59:27 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 20:59:27 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:00:29 - INFO - BEGIN (implicit)
+2025-04-11 21:00:29 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:00:29 - INFO - [generated in 0.00036s] ('Consorcio Edifica Perú',)
+2025-04-11 21:00:29 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:00:29 - INFO - [generated in 0.00037s] ('Grupo Inversionista Boyer S.R.L.',)
+2025-04-11 21:00:29 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:00:29 - INFO - [cached since 0.004254s ago] ('Consorcio Edifica Perú',)
+2025-04-11 21:00:29 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:00:29 - INFO - [cached since 0.001674s ago] ('Construcciones EQQUS S.A.',)
+2025-04-11 21:00:29 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:00:29 - INFO - [cached since 0.005136s ago] ('Consorcio Edifica Perú',)
+2025-04-11 21:00:29 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:00:29 - INFO - [cached since 0.002502s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 21:00:29 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:00:29 - INFO - [generated in 0.00015s (insertmanyvalues) 1/3 (ordered; batch not supported)] (13, 17, 0.1)
+2025-04-11 21:00:29 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:00:29 - INFO - [insertmanyvalues 2/3 (ordered; batch not supported)] (13, 18, 0.45)
+2025-04-11 21:00:29 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:00:29 - INFO - [insertmanyvalues 3/3 (ordered; batch not supported)] (13, 1, 0.45)
+2025-04-11 21:00:29 - INFO - COMMIT
+2025-04-11 21:00:29 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:01:41 - DEBUG - 2 changes detected: {(<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:01:41 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:02:34 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:02:34 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:02:39 - INFO - BEGIN (implicit)
+2025-04-11 21:02:39 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 21:02:39 - INFO - [cached since 403.1s ago] ()
+2025-04-11 21:02:39 - INFO - COMMIT
+2025-04-11 21:02:39 - INFO - BEGIN (implicit)
+2025-04-11 21:02:39 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 21:02:39 - INFO - [cached since 403.1s ago] ()
+2025-04-11 21:02:39 - INFO - COMMIT
+2025-04-11 21:02:39 - INFO - BEGIN (implicit)
+2025-04-11 21:02:39 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 21:02:39 - INFO - [cached since 403.1s ago] ()
+2025-04-11 21:02:39 - INFO - COMMIT
+2025-04-11 21:02:39 - INFO - BEGIN (implicit)
+2025-04-11 21:02:39 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 21:02:39 - INFO - [cached since 403.1s ago] ()
+2025-04-11 21:02:39 - INFO - COMMIT
+2025-04-11 21:02:39 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:05:31 - INFO - BEGIN (implicit)
+2025-04-11 21:05:31 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:05:31 - INFO - [cached since 301.6s ago] ('Consorcio Imperial',)
+2025-04-11 21:05:31 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:05:31 - INFO - [cached since 301.6s ago] ('Corporación Portilla S.A.C.',)
+2025-04-11 21:05:31 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:05:31 - INFO - [cached since 301.6s ago] ('Consorcio Imperial',)
+2025-04-11 21:05:31 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:05:31 - INFO - [cached since 301.6s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 21:05:31 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:05:31 - INFO - [cached since 301.6s ago] ('Consorcio Ingeniería/Mochumí',)
+2025-04-11 21:05:31 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:05:31 - INFO - [cached since 301.6s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 21:05:31 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:05:31 - INFO - [cached since 301.6s ago] ('Consorcio Ingeniería/Mochumí',)
+2025-04-11 21:05:31 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:05:31 - INFO - [cached since 301.6s ago] ('Ugaz & Ugaz Ingenieros S.R.L.',)
+2025-04-11 21:05:31 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:05:31 - INFO - [cached since 301.6s ago (insertmanyvalues) 1/4 (ordered; batch not supported)] (14, 19, 0.14)
+2025-04-11 21:05:31 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:05:31 - INFO - [insertmanyvalues 2/4 (ordered; batch not supported)] (14, 1, 0.86)
+2025-04-11 21:05:31 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:05:31 - INFO - [insertmanyvalues 3/4 (ordered; batch not supported)] (16, 1, 0.8975)
+2025-04-11 21:05:31 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:05:31 - INFO - [insertmanyvalues 4/4 (ordered; batch not supported)] (16, 2, 0.1025)
+2025-04-11 21:05:31 - INFO - COMMIT
+2025-04-11 21:05:31 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:06:24 - DEBUG - 2 changes detected: {(<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:06:25 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:06:25 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:07:02 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:07:03 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:07:03 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:07:08 - DEBUG - 2 changes detected: {(<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:07:08 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:07:09 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:07:10 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:07:10 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:07:23 - DEBUG - 2 changes detected: {(<Change.added: 1>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:07:24 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:07:24 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:07:33 - DEBUG - 3 changes detected: {(<Change.deleted: 3>, '/home/diego/Canotila/elektra/backend/data/database.db-journal'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:07:33 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:08:07 - INFO - BEGIN (implicit)
+2025-04-11 21:08:07 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 21:08:07 - INFO - [cached since 731.3s ago] ()
+2025-04-11 21:08:07 - INFO - COMMIT
+2025-04-11 21:08:07 - INFO - BEGIN (implicit)
+2025-04-11 21:08:07 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 21:08:07 - INFO - [cached since 731.3s ago] ()
+2025-04-11 21:08:07 - INFO - COMMIT
+2025-04-11 21:08:07 - INFO - BEGIN (implicit)
+2025-04-11 21:08:07 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios
+2025-04-11 21:08:07 - INFO - [cached since 731.3s ago] ()
+2025-04-11 21:08:07 - INFO - COMMIT
+2025-04-11 21:08:07 - INFO - BEGIN (implicit)
+2025-04-11 21:08:07 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas
+2025-04-11 21:08:07 - INFO - [cached since 731.3s ago] ()
+2025-04-11 21:08:07 - INFO - COMMIT
+2025-04-11 21:08:08 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:08:08 - DEBUG - 1 change detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log')}
+2025-04-11 21:10:28 - INFO - BEGIN (implicit)
+2025-04-11 21:10:28 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.5s ago] ('Consorcio Ingeniería/Seoane',)
+2025-04-11 21:10:28 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.5s ago] ('Julia Victoria Ugaz Medina',)
+2025-04-11 21:10:28 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.6s ago] ('Consorcio Ingeniería/Seoane',)
+2025-04-11 21:10:28 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.6s ago] ('Empresa Constructora Victoria S.A.',)
+2025-04-11 21:10:28 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.6s ago] ('Consorcio Ingeniería/Seoane',)
+2025-04-11 21:10:28 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.6s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 21:10:28 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.6s ago] ('Consorcio Ingenieros',)
+2025-04-11 21:10:28 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.6s ago] ('Construcciones Alardi S.A.C.',)
+2025-04-11 21:10:28 - INFO - SELECT consorcios.id, consorcios.nombre 
+FROM consorcios 
+WHERE consorcios.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.6s ago] ('Consorcio Ingenieros',)
+2025-04-11 21:10:28 - INFO - SELECT empresas.id, empresas.nombre, empresas.ruc 
+FROM empresas 
+WHERE empresas.nombre = ?
+2025-04-11 21:10:28 - INFO - [cached since 598.6s ago] ('Diego Antonio Ugaz Medina',)
+2025-04-11 21:10:28 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:10:28 - INFO - [cached since 598.6s ago (insertmanyvalues) 1/5 (ordered; batch not supported)] (15, 20, 0.35)
+2025-04-11 21:10:28 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:10:28 - INFO - [insertmanyvalues 2/5 (ordered; batch not supported)] (15, 13, 0.35)
+2025-04-11 21:10:28 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:10:28 - INFO - [insertmanyvalues 3/5 (ordered; batch not supported)] (15, 1, 0.3)
+2025-04-11 21:10:28 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:10:28 - INFO - [insertmanyvalues 4/5 (ordered; batch not supported)] (17, 15, 0.6)
+2025-04-11 21:10:28 - INFO - INSERT INTO consorcios_empresas_m2m (consorcio_id, empresa_id, "participación") VALUES (?, ?, ?) RETURNING id
+2025-04-11 21:10:28 - INFO - [insertmanyvalues 5/5 (ordered; batch not supported)] (17, 1, 0.4)
+2025-04-11 21:10:28 - INFO - COMMIT
+2025-04-11 21:10:28 - DEBUG - 3 changes detected: {(<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data/database.db'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/debug.log'), (<Change.modified: 2>, '/home/diego/Canotila/elektra/backend/data')}
+2025-04-11 21:10:55 - INFO - Shutting down
+2025-04-11 21:10:55 - INFO - Waiting for application shutdown.
+2025-04-11 21:10:55 - INFO - Application shutdown complete.
+2025-04-11 21:10:55 - INFO - Finished server process [29714]
+2025-04-11 21:10:55 - INFO - Stopping reloader process [29706]
