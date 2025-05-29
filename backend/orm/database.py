@@ -6,11 +6,13 @@ from orm.data import empresas, consorcios
 
 
 engine = create_engine("sqlite:///data/database.db", echo=True)
-session = sessionmaker(bind=engine, autoflush=False, autocommit=False)
+SessionFactory = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 
 
-def fill_database(ses: sessionmaker[Session], empresas: list, consorcios: list):
-    with ses.begin() as session:
+def fill_database(
+    SessionFactory: sessionmaker[Session], empresas: list, consorcios: list
+):
+    with SessionFactory.begin() as session:
         try:
             empresas = [Empresa(**entry) for entry in empresas]
             consorcios = [Consorcio(**entry) for entry in consorcios]
@@ -24,4 +26,4 @@ def fill_database(ses: sessionmaker[Session], empresas: list, consorcios: list):
 
 if __name__ == "__main__":
     Base.metadata.create_all(engine)
-    fill_database(session, empresas, consorcios)
+    fill_database(SessionFactory, empresas, consorcios)
